@@ -45,30 +45,12 @@ class ViewController: UIViewController {
     }
     
     @IBAction func buttonTapped(_ sender: UIButton) {
-        switch sender.tag {
-        case 0:
-            if correctAnswer == 0 {
-                print("")
-                askQuestion()
-            } else {
-                askQuestion()
-            }
-        case 1:
-            if correctAnswer == 1 {
-                print("")
-                askQuestion()
-            } else {
-                askQuestion()
-            }
-        case 2:
-            if correctAnswer == 2 {
-                print("")
-                askQuestion()
-            } else {
-                askQuestion()
-            }
-        default:
-            return
+        if sender.tag == correctAnswer {
+            title = "Correct"
+            score += 1
+        } else {
+            title = "Wrong"
+            if score > 0 { score -= 1 }
         }
     }
 }
