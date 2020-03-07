@@ -18,21 +18,60 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="vrp-5S-rnc">
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oK5-kf-wdO">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Bj-6W-dfz">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="269.5"/>
-                                        <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" image="us"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ed3-VE-HtO">
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oK5-kf-wdO">
+                                                <rect key="frame" x="107" y="84.5" width="200" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="200" id="4xa-Oq-gSz"/>
+                                                    <constraint firstAttribute="height" constant="100" id="tvp-pv-0RF"/>
+                                                </constraints>
+                                                <state key="normal" image="us"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="oK5-kf-wdO" firstAttribute="centerX" secondItem="3Bj-6W-dfz" secondAttribute="centerX" id="WCa-Mj-uSM"/>
+                                            <constraint firstItem="oK5-kf-wdO" firstAttribute="centerY" secondItem="3Bj-6W-dfz" secondAttribute="centerY" id="dat-Na-g8K"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6N0-Ji-KxK">
                                         <rect key="frame" x="0.0" y="269.5" width="414" height="269"/>
-                                        <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" image="russia"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W6T-yG-C3d">
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ed3-VE-HtO">
+                                                <rect key="frame" x="107" y="84.5" width="200" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="ZzS-4y-af5"/>
+                                                    <constraint firstAttribute="width" constant="200" id="eSU-ZC-50t"/>
+                                                </constraints>
+                                                <state key="normal" image="russia"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="ed3-VE-HtO" firstAttribute="centerX" secondItem="6N0-Ji-KxK" secondAttribute="centerX" id="IqH-Gc-yEU"/>
+                                            <constraint firstItem="ed3-VE-HtO" firstAttribute="centerY" secondItem="6N0-Ji-KxK" secondAttribute="centerY" id="suq-kO-wOa"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WTT-EE-O3b">
                                         <rect key="frame" x="0.0" y="538.5" width="414" height="269.5"/>
-                                        <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" image="spain"/>
-                                    </button>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W6T-yG-C3d">
+                                                <rect key="frame" x="107" y="85" width="200" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="6tB-11-6R7"/>
+                                                    <constraint firstAttribute="width" constant="200" id="9zk-XW-CLW"/>
+                                                </constraints>
+                                                <state key="normal" image="spain"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="W6T-yG-C3d" firstAttribute="centerX" secondItem="WTT-EE-O3b" secondAttribute="centerX" id="YlY-od-kGV"/>
+                                            <constraint firstItem="W6T-yG-C3d" firstAttribute="centerY" secondItem="WTT-EE-O3b" secondAttribute="centerY" id="ipl-t5-Gr2"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                             </stackView>
                         </subviews>
