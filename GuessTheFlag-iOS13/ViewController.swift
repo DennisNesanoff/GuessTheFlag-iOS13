@@ -9,6 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet var scoreLabel: UILabel!
     @IBOutlet var button1: UIButton!
     @IBOutlet var button2: UIButton!
     @IBOutlet var button3: UIButton!
@@ -16,6 +17,15 @@ class ViewController: UIViewController {
     var countries = [String]()
     var correctAnswer = 0
     var score = 0
+    var currentQuestion = 1 {
+        didSet {
+            if currentQuestion > 10 {
+                score = 0
+                currentQuestion = 1
+                scoreLabel.text = "Score: \(score) || Current question: \(currentQuestion)"
+            }
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,10 +40,12 @@ class ViewController: UIViewController {
         button2.layer.borderColor = UIColor.lightGray.cgColor
         button3.layer.borderColor = UIColor.lightGray.cgColor
         
+        scoreLabel.text = "Score: \(score) || Current question: \(currentQuestion)"
+        
         askQuestion()
     }
     
-    func askQuestion() {
+    func askQuestion(action: UIAlertAction! = nil) {
         countries.shuffle()
         
         button1.setImage(UIImage(named: countries[0]), for: .normal)
@@ -44,14 +56,23 @@ class ViewController: UIViewController {
         title = countries[correctAnswer].uppercased()
     }
     
+    func alert(title: String, message: String) {
+        let ac = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        ac.addAction(UIAlertAction(title: "Continue", style: .default, handler: askQuestion))
+        present(ac, animated: true)
+    }
+    
     @IBAction func buttonTapped(_ sender: UIButton) {
         if sender.tag == correctAnswer {
             title = "Correct"
             score += 1
         } else {
             title = "Wrong"
-            if score > 0 { score -= 1 }
+            if score > 0 { score -= 1; scoreLabel.text = "Score: \(score)" }
         }
+        currentQuestion += 1
+        scoreLabel.text = "Score: \(score) || Current question: \(currentQuestion)"
+        
+        alert(title: title!, message: "Your score is \(score).")
     }
 }
-
