@@ -28,6 +28,9 @@
                                                     <constraint firstAttribute="height" constant="100" id="tvp-pv-0RF"/>
                                                 </constraints>
                                                 <state key="normal" image="us"/>
+                                                <connections>
+                                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c0a-LY-AfK"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -39,13 +42,16 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6N0-Ji-KxK">
                                         <rect key="frame" x="0.0" y="269.5" width="414" height="269"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ed3-VE-HtO">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ed3-VE-HtO">
                                                 <rect key="frame" x="107" y="84.5" width="200" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="ZzS-4y-af5"/>
                                                     <constraint firstAttribute="width" constant="200" id="eSU-ZC-50t"/>
                                                 </constraints>
                                                 <state key="normal" image="russia"/>
+                                                <connections>
+                                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uJP-lU-uHD"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -57,13 +63,16 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WTT-EE-O3b">
                                         <rect key="frame" x="0.0" y="538.5" width="414" height="269.5"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W6T-yG-C3d">
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W6T-yG-C3d">
                                                 <rect key="frame" x="107" y="85" width="200" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="6tB-11-6R7"/>
                                                     <constraint firstAttribute="width" constant="200" id="9zk-XW-CLW"/>
                                                 </constraints>
                                                 <state key="normal" image="spain"/>
+                                                <connections>
+                                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BAa-6T-sFi"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
